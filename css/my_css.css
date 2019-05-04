@@ -1,0 +1,33 @@
+#form_one_img_div{
+	margin-left:25px;
+	background-color: green;
+}
+
+#form_two_img_div{
+	margin-left:25px;
+	background-color: lightblue;
+}
+
+#forms_container_div{
+	margin:20px;
+}
+
+#first_form_div{
+	float:left;
+	width:30%;
+	overflow:hidden;
+}
+
+#second_form_div{
+	float:left;
+	width:30%;
+	overflow:hidden;
+}
+
+#buttons_div{
+	margin-top:110px;
+	float:left;
+	width:30%;
+	overflow:hidden;
+	background-color: White; 
+}

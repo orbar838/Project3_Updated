@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My HTML Forms</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="\js\js_script.js"></script>
+		<link rel="stylesheet" type="text/css" href="\css\my_css.css">
+	</head>
+	<body>
+		<div id="forms_container_div">
+			<div id="first_form_div">
+				<div id="form_one_img_div">
+				<img src="\images\form1.png" id="form1_img" alt="Form Image" style="width:42px;height:48px;border:0;">
+				</div>
+				<h1>First Form</h1>
+				<form method="post" name="basicForm">
+					EMAIL Address:<br>
+					<input type:"text" name="email"><br>
+					Password:<br>
+					<input type="password" name="pass"><br>
+					<br>
+					<p> Select Member Type: </p>
+					<input type="radio" name="member_type" value="basic" checked> Basic<br>
+					<input type="radio" name="member_type" value="silver"> Silver<br>
+					<input type="radio" name="member_type" value="gold"> Gold<br>
+					<br>
+					<p> Select subscription Type: </p>
+					<select name="subscribe_period" size="1">
+						<option value="month">1 Month</option>
+						<option value="six_months">6 Months</option>
+						<option value="year" selected>1 Year</option>
+						<option value="two_years">2 Years</option>
+					</select>
+					<br><br><br><br>
+					<p> Select Options: </p>
+						<input type="checkbox" name="options_newsletter" value="newsletter"> Send me a Newsletter<br>
+						<input type="checkbox" name="options_renewal" value="auto_renewal" checked> Auto Renewal<br>
+						<input type="checkbox" name="options_sava_card" value="keep_my_card" checked> Save credit card information<br><br>
+						<input type="submit" value="Submit">
+				</form>
+			</div>
+			<div id="second_form_div">
+				<div id="form_two_img_div">
+				<img src="\images\form2.png" id="form2_img" alt="Form Image" style="width:42px;height:48px;border:0;">
+				</div>
+				<h1>Second Form</h1>
+				<form action="/html5_form" method="post" name="html5Form">
+					Select Color: <input type="color" name="my_color" value="#ff0000"><br><br>
+					Select Date: <input type="date" name="my_date" value="2001-07-22" min="1930-01-02" max="2020-01-02" required><br><br>
+					Select Email: <input type="email" name="html5_email"><br><br>
+					Select a file: <input type="file" name="myFile"><br><br>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			<div id="buttons_div">
+				<button type="button">I do nothing</button><br><br>
+				<button type="button" id="ch_div_color_btn">change div color</button><br><br>
+				<button type="button" id="send_ajax_request">Send Ajax Request</button>
+			</div>
+		</div>
+	</body>
+</html>
